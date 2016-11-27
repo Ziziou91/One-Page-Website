@@ -1,0 +1,171 @@
+/* NAVIGATION BAR */
+ul.topnav {
+	width: 100%;
+    list-style-type: none;
+    margin: 0px;
+    padding 0px;
+    overflow: hidden;
+    background: linear-gradient(#0a161c, black);
+    position: fixed; /* Make it stick, even on scroll */
+    top: 0;
+    left: 0;
+    height: 60px;
+}
+
+ul.topnav li {float: left;}
+
+/* Link Style */
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 20px;
+    margin-top: -4px;
+}
+/* Link Hover */
+ul.topnav li a:hover {background-color: #555;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+/* REST OF THE PAGE*/
+body {
+    font-family: oswald, Geneva;
+    background-image: url("/Users/Josh/Documents/Web Development/One Page Website/images/asanoha-400px.png") !important;
+    background-attachment: fixed;
+    color: #0a161c;
+}
+.flex-about {
+  display: flex;
+  
+  /* Then we define the flow direction and if we allow the items to wrap 
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+  flex-flow: row wrap;
+  
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-around;
+}
+
+.flex-reverse {
+  display: flex;
+  
+  /* Then we define the flow direction and if we allow the items to wrap 
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+  flex-flow: row wrap-reverse;
+  
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-around;
+}
+/*transparent box*/
+.headbox { 
+background-color: rgba(197,193,192,0.3); 
+border-radius:5px;
+
+}
+/*Horizontal Divider*/
+.h-divider{
+ height:1px;
+ width:100%;
+ border-top:1px solid gray;
+}
+
+.h-divider2{
+ height:1px;
+ width:100%;
+ border-top:1px solid gray;
+ display: none;
+}
+
+.hello {
+	margin-top: -125px;
+	font-weight: bold;
+	text-align: center; 
+	color: #1A2930; 
+	font-size: 90px;
+}
+
+.helloIn {
+	display:none;
+	}
+
+.portfolioBody {
+	min-width: 600px;
+	
+}
+
+.welcome { 
+ display: none
+ 
+} 
+
+.portrait {
+	display: none;
+}
+
+.content {
+	display: none;
+}
+
+a.port {
+font-size: 30px;
+color: white;
+text-decoration: none;
+}
+
+a.port:hover {
+color: #c5c1c0;
+}
+
+h2 {
+text-align: center; 
+color: #1A2930;
+}
+
+h1 {
+text-align: center; 
+color: #1A2930;
+}
+
+.portbtn {
+margin-top: 20px; 
+width: 200px; 
+height: 50px; 
+color: white; 
+background-color: #1A2930;
+font-size: 18px;
+}

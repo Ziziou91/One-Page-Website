@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/navbarplayground.css">    
+<!--Javascript starts here--!>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+/*header js*/
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+/*hello fade in*/
+window.onload =setTimeout(mySec, 1000);
+function mySec(){
+    $(".helloIn").fadeIn(1000);};
+/*divider fade in*/
+window.onload = setTimeout(myThi, 1500);
+function myThi(){
+    $(".h-divider2").fadeIn(1000);};
+/*welcome message fade in*/
+window.onload =setTimeout(myFunction, 2500);
+function myFunction(){
+     $(".welcome").fadeIn(1000);};
+/*portrait fade in*/
+window.onload =setTimeout(myPic, 3500);
+function myPic(){
+     $(".portrait").fadeIn(1000);};
+/*rest of the page fade in*/
+window.onload =setTimeout(rest, 4500);
+function rest(){
+     $(".content").fadeIn(1000);};
+/*CONTACT FORM SENDING TEXT*/
+var send = document.getElementById('contact-submit');
+if(send) {
+        send.onclick = function () {
+                this.innerHTML = '...Sending';
+        }
+}
+</script>
+</head>
+
+<body>
+<!-- HEADER --!>
+<ul class="topnav navbarLink" id="myTopnav">
+  <li><a class="navbar-brand" href="#about" style="color: white; font-size: 28px; margin-top: -10px; margin-left: -35px; padding-right: 25px;">Joshua Gray</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#portfolio">Portfolio</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li style="float:right; margin-right: 50px;"><a class="active" href="#about"><img style="width: 28px;" src="images/youtube.png"alt="Link to YouTube page"></a></li>
+  <li style="float:right;"><a class="active" href="#about"><img style="width: 28px;" src="images/twitter.png"alt="Link to Twitter page"></a></li> 
+  <li style="float:right;"><a class="active" href="https://www.linkedin.com/in/joshua-gray-421b75120?trk=hp-identity-name"><img style="width: 28px;" src="images/linkedin.png"alt="Link to LinkedIn page"></a></li>
+   <li style="float:right;"><a class="active" href="mailto:?Subject=Josh Grays portfolio&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20"><img style="width: 28px;" src="images/share.png"alt="Link to share the page"></a></li>
+  <li class="icon">
+    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+  </li>
+</ul>
+
+<!-- ABOUT --!>
+<div id="about"/>
+<div style="margin-top: 80px;">
+		<div class="flex-about">
+			<div style="width: 600px; height: 450px; margin-top: 0px; margin-top: 10px; min-width: 600px;">
+				<div class="hello">
+				<h1 class="helloIn">HELLO</h1>
+				</div>
+				<div class="h-divider2" style="width: 550px; margin-left: 25px; margin-top:-135px;"></div>
+				
+				<h2 class="welcome" style="color: #1A2930; text-align: center; font-size: 80px; margin-top: 35px; line-height: 98%;">WELCOME TO MY WEBSITE</h2>
+				
+			</div> 
+			<div style="width: 400px; margin-right: 50px; padding-top: 50px;">
+				<img class="portrait" style="width: 450px; border-radius: 50%; margin-top: -40px; margin-left: -30px; margin-bottom: -10px;" src="http://res.cloudinary.com/diohwb5lp/image/upload/v1478801234/portfolio_me_ntwyoo.jpg">
+			</div>
+		</div>
+	<div id="portfolio"/>
+			
+<!-- THIS DIV IS FOR THE CONTENT FADE IN--!> 
+<div id="portfolio"/>
+	<div class="content">
+<!-- PORTFOLIO CONTENT --!>
+		<div class="flex-about">	
+			<div class="headbox" style=" margin-top: 25px; width: 1250px; min-width: 600px;">
+				<div class="flex-about">
+					<h3 style="text-align: center; color: #1A2930; font-size: 23px; margin-top: 30px;">I have put this page together to showcase projects I have worked on recently.
+					<br> Check out the samples and contact me using the form below.
+					</h3>
+						<div class="h-divider" style="width: 80%; margin-top: 0px; min-width: 500px;">
+						</div>
+				</div>
+				<h2 style="font-size: 60px; margin-top: 10px;">PORTFOLIO</h2>
+			
+<!-- SUN RA TRIBURE PAGE--!>
+				<div class="flex-about" style="margin-top: -50px;">
+					<div style="width: 600px; height: 450px; min-width: 600px; margin-bottom: -50px;">
+						<a href="http://codepen.io/Zizou91/pen/BLXVMW">	
+						<img style="margin-top: 10px;" src="http://res.cloudinary.com/diohwb5lp/image/upload/v1480268193/Sun_Ra_600_aum1zs.jpg"alt="Image of Sun Ra tribute page">
+						</a>
+					</div>
+					<div style="width: 600px; height: 450px; min-width: 600px; margin-top: -30px;">
+							<a class="port" href="http://codepen.io/Zizou91/pen/BLXVMW">	
+							<h2 style="font-size: 40px; text-align: left;">SUN RA TRIBUTE PAGE</h2>
+							</a>
+							<div class="h-divider" style="width: 100%; margin-top: -15px; min-width: 500px;">
+							</div>
+							<p style="text-align: justify;">I put this website together as part of a project on Free Code Camp. It was the first website I designed using bootstrap, and the goal was to demonstrate aspects I had been utilising in previous exercises. In particular, I wanted to use the responsive grid system and image thumbnails to create an article that might be found on a music blog. While creating this page, I learnt a lot about the strengths and limitations of using a framework and the importance of having a clear design brief before starting.
+							</P>
+							<button class="portbtn" type="button" onclick=location.href="http://codepen.io/Zizou91/pen/mOPPOO">VISIT THIS PAGE</button>
+					</div>
+				</div>		
+<!-- SMART LABELLING WEBSITE --!>
+				<div class="flex-reverse" style="margin-top: -35px;">
+					<div style="width: 600px; height: 450px; min-width: 600px; margin-top; 10px;">
+							<a class="port" href="http://www.smartlabelling.co.uk/">	
+							<h2 style="font-size: 40px; text-align: left;">SMART LABELLING SITE</h2>
+							</a>
+							<div class="h-divider" style="width: 100%; margin-top: -15px; min-width: 500px;">
+							</div>
+							<p style="text-align: justify;">During my time with Smart Labeling I was with redesigning the e-commerce website to give it a more contemporary feel. I was given a design brief to keep within the companies branding, and I learnt about the importance of creating a consistent message and user experience. In addition, I also made the website responsive, significantly increasing traffic from mobile and tablet devices. 
+							</P>
+							<button class="portbtn" type="button" onclick=location.href="http://www.smartlabelling.co.uk/">VISIT THIS PAGE</button>
+					</div>
+					<div style="width: 600px; height: 450px; min-width: 600px; margin-bottom: -50px; margin-top: -50px;">
+						<a href="http://www.smartlabelling.co.uk/">	
+						<img style="margin-top: 10px;" src="http://res.cloudinary.com/diohwb5lp/image/upload/v1480273489/Smartlabelling_Web_600_iyrecx.jpg"alt="Image of Smart Labelling e-commerce site">
+						</a>
+					</div>
+				</div>		
+<!-- DENTAL CARDS WEBSITE --!>
+				<div class="flex-about">
+					<div style="width: 600px; height: 450px; min-width: 600px; margin-bottom: -50px;">
+						<a href="http://www.dentalcards.co.uk/">	
+						<img style="margin-top: 10px;" src="http://res.cloudinary.com/diohwb5lp/image/upload/v1480280214/Dentalcards_Web_iken9n.jpg"alt="Image of Sun Ra tribute page">
+						</a>
+					</div>
+					<div style="width: 600px; height: 450px; min-width: 600px; margin-top: -30px;">
+							<a class="port" href="http://www.dentalcards.co.uk/">	
+							<h2 style="font-size: 40px; text-align: left;">DENTAL CARDS SITE</h2>
+							</a>
+							<div class="h-divider" style="width: 100%; margin-top: -15px; min-width: 500px;">
+							</div>
+							<p style="text-align: justify;">After creating the Smart Labelling website, I was then asked to create a website for the spin-off company, 'DentalCards.co.uk'. The brief was to make to make an e-commerce site for a single product, and explain the virtues of using direct thermal print media to a new audience. During my time working on this project I learned a lot about tailoring an online experience to a specific audience.
+							</P>
+							<button class="portbtn" type="button" onclick=location.href="http://www.dentalcards.co.uk/">VISIT THIS PAGE</button>
+							
+					</div>
+				</div>
+
+				</div>
+					
+<!-- CONTACT FORM --!>
+			<div id="contact" style="width: 100%;">		
+				<h2 style="font-size: 60px; margin-top: 15px;">CONTACT</h2>
+			</div>
+			<div class="h-divider" style="width: 500px; margin-top: -45px; min-width: 500px;"></div>
+		</div>
+		<div class="flex-about">
+			<div class="headbox" style="width: 500px; padding-bottom: 20px;" align="center">
+				<form id="contact-form" action="/" method="post">
+        		<h3 style="color: #1A2930; font-size: 28px; text-align: center;">GET IN TOUCH</h3>
+        		<div class="flex-about">
+<!-- TITLES --!>		
+ 				<div style="padding-left: 10px; width: 220px; color: #1A2930;" align="left">       
+        			<div style="margin-top: 10px;">
+                		<label>
+                        	<span>Name: (required)</span>
+                		</label>
+        			</div>
+        			<div style="margin-top: 10px;">
+                		<label>
+                        	<span>Email: (required)</span>
+                		</label>
+        			</div>
+        			<div style="margin-top: 10px;">
+                		<label>
+                     	   <span>Message: (required)</span>
+                		</label>
+        			</div>
+        			
+        			</div>
+<!-- INPUT FIELDS--!>
+        			<div align="right" style="width: 150px; padding-right: 70px; ">
+        				<input style="margin-top: 10px; width: 150px;" align="right" placeholder="Please enter your name" type="text" tabindex="1" required >
+                		<input style="margin-top: 10px; width: 150px;" align="right" placeholder="Please enter your email address" type="email" tabindex="2" required>
+                		<textarea style="margin-top: 10px; width: 150px;" align="right" placeholder="Include all the details you can" tabindex="5" required></textarea>
+					</div>
+					<button class="portbtn" name="submit" type="submit" id="contact-submit">Send Email</button>
+					</form>
+        			</div>
+        		
+		</div>
+</div>
+</body>
+</html>
+
+</body>
+</html>
